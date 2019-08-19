@@ -9,7 +9,7 @@ import java.util.concurrent.FutureTask;
  * @date ：Created in 2019/8/16 16:29
  * @description：新启线程的方式
  */
-public class Subject_1 {
+public class StartThread {
     /* extends Thread */
     private static class UseThread extends Thread {
         @Override

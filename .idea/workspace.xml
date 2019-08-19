@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33cedc4c-034f-4f21-9bf9-f40e74706370" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ren/improve/EndThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ren/improve/Subject_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ren/improve/Subject_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/concurrent/ren/improve/Subject_1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/concurrent/ren/improve/Subject_1$UseCallable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/concurrent/ren/improve/Subject_1$UseRunnable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/concurrent/ren/improve/Subject_1$UseThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/concurrent/ren/improve/Subject_1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ren/improve/Subject_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ren/improve/StartThread.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,24 +24,48 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ren/improve/Subject_1.java">
+        <entry file="file://$PROJECT_DIR$/src/ren/improve/StartThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="26" selection-start-line="25" selection-end-line="26" />
+            <state relative-caret-position="253">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#671#672#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ren/improve/DaemonThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/concurrent.iml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ren/improve/EndThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="29" column="5" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="29" selection-end-column="5" />
+            <state relative-caret-position="391">
+              <caret line="17" column="13" selection-start-line="15" selection-start-column="10" selection-end-line="17" selection-end-column="13" />
               <folding>
+                <element signature="e#246#247#0" expanded="true" />
                 <element signature="e#281#282#0" expanded="true" />
               </folding>
             </state>
@@ -47,21 +75,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ren/improve/EndRunnable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
+            <state relative-caret-position="414">
               <caret line="18" column="70" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="70" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ren/improve/HasInterruptedException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-              <folding>
-                <element signature="e#283#284#0" expanded="true" />
-                <element signature="e#318#319#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="621">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -69,7 +93,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/lang/Thread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
+            <state relative-caret-position="5911">
               <caret line="298" column="11" selection-start-line="298" selection-start-column="11" selection-end-line="298" selection-end-column="11" />
               <folding>
                 <element signature="e#36478#36479#0" expanded="true" />
@@ -104,10 +128,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ren/improve/Subject_1.java" />
         <option value="$PROJECT_DIR$/src/ren/improve/EndRunnable.java" />
         <option value="$PROJECT_DIR$/src/ren/improve/EndThread.java" />
         <option value="$PROJECT_DIR$/src/ren/improve/HasInterruptedException.java" />
+        <option value="$PROJECT_DIR$/src/ren/improve/Subject_1.java" />
+        <option value="$PROJECT_DIR$/src/ren/improve/DaemonThread.java" />
       </list>
     </option>
   </component>
@@ -123,6 +148,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -152,8 +179,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -173,7 +198,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.HasInterruptedException">
+  <component name="RunManager" selected="Application.DaemonThread">
+    <configuration name="DaemonThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ren.improve.DaemonThread" />
+      <module name="concurrent" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ren.improve.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EndRunnable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ren.improve.EndRunnable" />
       <module name="concurrent" />
@@ -228,6 +266,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DaemonThread" />
         <item itemvalue="Application.HasInterruptedException" />
         <item itemvalue="Application.EndRunnable" />
         <item itemvalue="Application.EndThread" />
@@ -256,11 +295,11 @@
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.5035587" side_tool="true" weight="0.2540453" />
-      <window_info content_ui="combo" id="Project" order="4" sideWeight="0.48932385" weight="0.23543689" />
+      <window_info content_ui="combo" id="Project" order="4" sideWeight="0.48932385" visible="true" weight="0.2394822" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.3291815" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.29715303" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4975728" weight="0.3250444" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.4975728" visible="true" weight="0.24156305" />
       <window_info anchor="bottom" x="22" y="241" width="1236" height="198" id="Debug" order="4" sideWeight="0.49676377" weight="0.4822064" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -284,27 +323,23 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/ren/improve.java" />
-    <entry file="file://$PROJECT_DIR$/src/ren/improve/Subject_1.java">
+    <entry file="file://$PROJECT_DIR$/src/ren/improve/EndRunnable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="26" selection-start-line="25" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#671#672#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="414">
+          <caret line="18" column="70" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="70" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ren/improve/EndRunnable.java">
+    <entry file="file://$PROJECT_DIR$/src/ren/improve/HasInterruptedException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="18" column="70" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="70" />
+        <state relative-caret-position="621">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
+        <state relative-caret-position="5911">
           <caret line="298" column="11" selection-start-line="298" selection-start-column="11" selection-end-line="298" selection-end-column="11" />
           <folding>
             <element signature="e#36478#36479#0" expanded="true" />
@@ -313,24 +348,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/concurrent.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ren/improve/EndThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="29" selection-end-column="5" />
+        <state relative-caret-position="391">
+          <caret line="17" column="13" selection-start-line="15" selection-start-column="10" selection-end-line="17" selection-end-column="13" />
           <folding>
+            <element signature="e#246#247#0" expanded="true" />
             <element signature="e#281#282#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ren/improve/HasInterruptedException.java">
+    <entry file="file://$PROJECT_DIR$/src/ren/improve/StartThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="253">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
           <folding>
-            <element signature="e#283#284#0" expanded="true" />
-            <element signature="e#318#319#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ren/improve/DaemonThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
         </state>
       </provider>
     </entry>
