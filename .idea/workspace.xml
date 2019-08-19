@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33cedc4c-034f-4f21-9bf9-f40e74706370" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/concurrent/ren/improve/Subject_1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/concurrent/ren/improve/Subject_1$UseCallable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/concurrent/ren/improve/Subject_1$UseRunnable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/concurrent/ren/improve/Subject_1$UseThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/concurrent/ren/improve/Subject_1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ren/improve/Subject_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ren/improve/StartThread.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ren/improve/DaemonThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+            <state relative-caret-position="93">
+              <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -289,7 +282,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.51067615" side_tool="true" weight="0.27427185" />
       <window_info id="Designer" order="1" />
@@ -299,7 +291,7 @@
       <window_info anchor="bottom" id="Messages" order="0" weight="0.3291815" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.29715303" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.4975728" visible="true" weight="0.24156305" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4975728" weight="0.24156305" />
       <window_info anchor="bottom" x="22" y="241" width="1236" height="198" id="Debug" order="4" sideWeight="0.49676377" weight="0.4822064" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -307,7 +299,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50242716" side_tool="true" weight="0.26868328" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.3291815" />
-      <window_info anchor="bottom" x="22" y="256" width="1236" height="169" id="Terminal" order="11" sideWeight="0.4959547" weight="0.3676732" />
+      <window_info active="true" anchor="bottom" x="22" y="256" width="1236" height="169" id="Terminal" order="11" sideWeight="0.4959547" visible="true" weight="0.3676732" />
       <window_info active="true" anchor="bottom" id="SonarLint" order="12" visible="true" weight="0.4572954" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
@@ -380,8 +372,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ren/improve/DaemonThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        <state relative-caret-position="93">
+          <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
         </state>
       </provider>
     </entry>

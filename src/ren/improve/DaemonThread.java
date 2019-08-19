@@ -25,9 +25,7 @@ public class DaemonThread {
         useThread.setDaemon(true);
         useThread.start();
         Thread.sleep(50);
-//        useThread.interrupt();
-        /*
-        * 守护线程：当前线程会跟随主线程一并结束，故不interrupt，线程也会停止执行
-        * */
+        //守护线程：当前线程会跟随主线程一并结束，故不interrupt，线程也会停止执行
+        //useThread.interrupt();
     }
 }
