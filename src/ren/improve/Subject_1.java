@@ -11,7 +11,7 @@ import java.util.concurrent.FutureTask;
  */
 public class Subject_1 {
     /* extends Thread */
-    private static class UserThread extends Thread {
+    private static class UseThread extends Thread {
         @Override
         public void run() {
             super.run();
@@ -20,7 +20,7 @@ public class Subject_1 {
     }
 
     /* implements Runnable */
-    private static class UserRunnable implements Runnable {
+    private static class UseRunnable implements Runnable {
         @Override
         public void run() {
             System.out.println(Thread.currentThread().getName() + " am implements Runnable");
@@ -28,7 +28,7 @@ public class Subject_1 {
     }
 
     /* implements Callable */
-    private static class UserCallable implements Callable<String> {
+    private static class UseCallable implements Callable<String> {
 
         @Override
         public String call() {
@@ -38,14 +38,14 @@ public class Subject_1 {
     }
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        UserThread userThread = new UserThread();
-        userThread.start();
-        UserRunnable userRunnable = new UserRunnable();
+        UseThread useThread = new UseThread();
+        useThread.start();
+        UseRunnable useRunnable = new UseRunnable();
 
-        new Thread(userRunnable).start();
-        UserCallable userCallable = new UserCallable();
-        FutureTask<String> task = new FutureTask<>(userCallable);//包装 Callable
+        new Thread(useRunnable).start();
+        UseCallable useCallable = new UseCallable();
+        FutureTask<String> task = new FutureTask<>(useCallable);//包装 Callable
         new Thread(task).start();
-        System.out.println("Get UserCallable Result " + task.get());
+        System.out.println("Get UseCallable Result " + task.get());
     }
 }
