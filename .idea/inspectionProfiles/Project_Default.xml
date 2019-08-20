@@ -30,7 +30,7 @@
       <option name="IGNORE_JAVADOC_PERIOD" value="true" />
       <option name="IGNORE_DUPLICATED_THROWS" value="false" />
       <option name="IGNORE_POINT_TO_ITSELF" value="false" />
-      <option name="myAdditionalJavadocTags" value="date,description：新启线程的方式,description：中断扩展自Thread类的线程,description：中断实现Runnable的线程,description：守护线程" />
+      <option name="myAdditionalJavadocTags" value="date,description：新启线程的方式,description：中断扩展自Thread类的线程,description：中断实现Runnable的线程,description：守护线程,description：验证多线程下的变量共享,description：" />
     </inspection_tool>
   </profile>
 </component>

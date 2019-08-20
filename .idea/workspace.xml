@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33cedc4c-034f-4f21-9bf9-f40e74706370" name="Default Changelist" comment="" />
+    <list default="true" id="33cedc4c-034f-4f21-9bf9-f40e74706370" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/concurrent/ren/improve/DaemonThread$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/concurrent/ren/improve/DaemonThread$UseThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/concurrent/ren/improve/DaemonThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/concurrent/ren/improve/EndRunnable$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/concurrent/ren/improve/EndRunnable$UseRunnable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/concurrent/ren/improve/EndRunnable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/concurrent/ren/improve/EndThread$UseThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/concurrent/ren/improve/EndThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/concurrent/ren/improve/HasInterruptedException$UseThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/concurrent/ren/improve/HasInterruptedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/concurrent/ren/improve/StartThread$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/concurrent/ren/improve/StartThread$UseCallable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/concurrent/ren/improve/StartThread$UseRunnable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/concurrent/ren/improve/StartThread$UseThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/concurrent/ren/improve/StartThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ren/improve/DaemonThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ren/improve/simpleDemo/DaemonThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ren/improve/EndRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ren/improve/simpleDemo/EndRunnable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ren/improve/EndThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ren/improve/simpleDemo/EndThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ren/improve/HasInterruptedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ren/improve/simpleDemo/HasInterruptedException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ren/improve/StartThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ren/improve/simpleDemo/StartThread.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,27 +39,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ren/improve/StartThread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ren/improve/DaemonThread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/concurrent.iml">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -47,33 +50,72 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1235">
+              <caret line="481" column="10" lean-forward="true" selection-start-line="481" selection-start-column="10" selection-end-line="481" selection-end-column="10" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ren/improve/EndThread.java">
+        <entry file="file://$PROJECT_DIR$/src/ren/improve/simpleDemo/EndThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="345">
               <caret line="17" column="13" selection-start-line="15" selection-start-column="10" selection-end-line="17" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ren/improve/simpleDemo/EndRunnable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ren/improve/syn/SynTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="25" column="60" lean-forward="true" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
               <folding>
-                <element signature="e#246#247#0" expanded="true" />
-                <element signature="e#281#282#0" expanded="true" />
+                <element signature="e#256#257#0" expanded="true" />
+                <element signature="e#277#278#0" expanded="true" />
+                <element signature="e#291#292#0" expanded="true" />
+                <element signature="e#312#313#0" expanded="true" />
+                <element signature="e#339#340#0" expanded="true" />
+                <element signature="e#365#366#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ren/improve/syn/SynClassAndInstance.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="434">
+              <caret line="94" column="5" lean-forward="true" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
+              <folding>
+                <element signature="e#930#931#0" expanded="true" />
+                <element signature="e#1000#1001#0" expanded="true" />
+                <element signature="e#1392#1393#0" expanded="true" />
+                <element signature="e#1462#1463#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ren/improve/EndRunnable.java">
+        <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="18" column="70" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="70" />
-            </state>
+            <state relative-caret-position="-2284" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ren/improve/HasInterruptedException.java">
+        <entry file="file://$PROJECT_DIR$/src/ren/improve/simpleDemo/HasInterruptedException.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="621">
               <caret line="29" selection-start-line="29" selection-end-line="29" />
@@ -124,10 +166,14 @@
         <option value="$PROJECT_DIR$/src/ren/improve/HasInterruptedException.java" />
         <option value="$PROJECT_DIR$/src/ren/improve/Subject_1.java" />
         <option value="$PROJECT_DIR$/src/ren/improve/DaemonThread.java" />
+        <option value="$PROJECT_DIR$/src/ren/improve/线程的创建与中断以及守护线程/DaemonThread.java" />
+        <option value="$PROJECT_DIR$/src/ren/improve/simpleDemo/EndRunnable.java" />
+        <option value="$PROJECT_DIR$/src/ren/improve/syn/SynTest.java" />
+        <option value="$PROJECT_DIR$/src/ren/improve/syn/SynClassAndInstance.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-12" />
     <option name="y" value="-12" />
     <option name="width" value="981" />
@@ -139,8 +185,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -166,6 +212,14 @@
               <item name="ren" type="462c0819:PsiDirectoryNode" />
               <item name="improve" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="concurrent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ren" type="462c0819:PsiDirectoryNode" />
+              <item name="improve" type="462c0819:PsiDirectoryNode" />
+              <item name="syn" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -189,13 +243,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DaemonThread">
+  <component name="RunManager" selected="Application.SynClassAndInstance">
     <configuration name="DaemonThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ren.improve.DaemonThread" />
+      <option name="MAIN_CLASS_NAME" value="ren.improve.simpleDemo.DaemonThread" />
       <module name="concurrent" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ren.improve.*" />
+          <option name="PATTERN" value="ren.improve.simpleDemo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -204,24 +258,11 @@
       </method>
     </configuration>
     <configuration name="EndRunnable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ren.improve.EndRunnable" />
+      <option name="MAIN_CLASS_NAME" value="ren.improve.simpleDemo.EndRunnable" />
       <module name="concurrent" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ren.improve.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EndThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ren.improve.EndThread" />
-      <module name="concurrent" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ren.improve.*" />
+          <option name="PATTERN" value="ren.improve.simpleDemo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -230,11 +271,11 @@
       </method>
     </configuration>
     <configuration name="HasInterruptedException" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ren.improve.HasInterruptedException" />
+      <option name="MAIN_CLASS_NAME" value="ren.improve.simpleDemo.HasInterruptedException" />
       <module name="concurrent" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ren.improve.*" />
+          <option name="PATTERN" value="ren.improve.simpleDemo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -242,12 +283,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Subject_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ren.improve.Subject_1" />
+    <configuration name="SynClassAndInstance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ren.improve.syn.SynClassAndInstance" />
       <module name="concurrent" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ren.improve.*" />
+          <option name="PATTERN" value="ren.improve.syn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SynTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ren.improve.syn.SynTest" />
+      <module name="concurrent" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ren.improve.syn.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -257,11 +311,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SynClassAndInstance" />
+        <item itemvalue="Application.SynTest" />
         <item itemvalue="Application.DaemonThread" />
         <item itemvalue="Application.HasInterruptedException" />
         <item itemvalue="Application.EndRunnable" />
-        <item itemvalue="Application.EndThread" />
-        <item itemvalue="Application.Subject_1" />
       </list>
     </recent_temporary>
   </component>
@@ -279,17 +333,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.51067615" side_tool="true" weight="0.27427185" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.5035587" side_tool="true" weight="0.2540453" />
-      <window_info content_ui="combo" id="Project" order="4" sideWeight="0.48932385" visible="true" weight="0.2394822" />
+      <window_info active="true" content_ui="combo" id="Project" order="4" sideWeight="0.48932385" visible="true" weight="0.24757281" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.3291815" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.29715303" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4975728" weight="0.24156305" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4975728" weight="0.5097691" />
       <window_info anchor="bottom" x="22" y="241" width="1236" height="198" id="Debug" order="4" sideWeight="0.49676377" weight="0.4822064" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -297,7 +352,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50242716" side_tool="true" weight="0.26868328" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.3291815" />
-      <window_info active="true" anchor="bottom" x="22" y="256" width="1236" height="169" id="Terminal" order="11" sideWeight="0.4959547" visible="true" weight="0.3676732" />
+      <window_info anchor="bottom" x="22" y="256" width="1236" height="169" id="Terminal" order="11" sideWeight="0.4959547" weight="0.3676732" />
       <window_info active="true" anchor="bottom" id="SonarLint" order="12" visible="true" weight="0.4572954" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
@@ -313,14 +368,44 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/ren/improve.java" />
-    <entry file="file://$PROJECT_DIR$/src/ren/improve/EndRunnable.java">
+    <entry file="file://$PROJECT_DIR$/src/ren/improve/simpleDemo/StartThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="70" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="70" />
+        <state relative-caret-position="207">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ren/improve/HasInterruptedException.java">
+    <entry file="file://$PROJECT_DIR$/src/ren/improve/simpleDemo/DaemonThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/concurrent.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ren/improve/simpleDemo/EndThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="17" column="13" selection-start-line="15" selection-start-column="10" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ren/improve/simpleDemo/EndRunnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ren/improve/simpleDemo/HasInterruptedException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
           <caret line="29" selection-start-line="29" selection-end-line="29" />
@@ -338,40 +423,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/concurrent.iml">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/ren/improve/syn/SynTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="25" column="60" lean-forward="true" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
+          <folding>
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#291#292#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2284" />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ren/improve/EndThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="13" selection-start-line="15" selection-start-column="10" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="e#246#247#0" expanded="true" />
-            <element signature="e#281#282#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1235">
+          <caret line="481" column="10" lean-forward="true" selection-start-line="481" selection-start-column="10" selection-end-line="481" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ren/improve/StartThread.java">
+    <entry file="file://$PROJECT_DIR$/src/ren/improve/syn/SynClassAndInstance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        <state relative-caret-position="434">
+          <caret line="94" column="5" lean-forward="true" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#930#931#0" expanded="true" />
+            <element signature="e#1000#1001#0" expanded="true" />
+            <element signature="e#1392#1393#0" expanded="true" />
+            <element signature="e#1462#1463#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ren/improve/DaemonThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
         </state>
       </provider>
     </entry>
