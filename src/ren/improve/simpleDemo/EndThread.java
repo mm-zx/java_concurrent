@@ -3,7 +3,7 @@ package ren.improve.simpleDemo;
 /**
  * @author ：zhou (https://improve.ren)
  * @date ：Created in 2019/8/19 10:52
- * @description：中断扩展自Thread类的线程
+ * @description： 中断扩展自Thread类的线程
  */
 public class EndThread {
     private static class UseThread extends Thread {

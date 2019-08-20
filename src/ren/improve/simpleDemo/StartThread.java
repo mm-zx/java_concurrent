@@ -7,7 +7,7 @@ import java.util.concurrent.FutureTask;
 /**
  * @author ：zhou (https://improve.ren)
  * @date ：Created in 2019/8/16 16:29
- * @description：新启线程的方式
+ * @description： 新启线程的方式
  */
 public class StartThread {
     /* extends Thread */

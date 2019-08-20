@@ -3,7 +3,7 @@ package ren.improve.simpleDemo;
 /**
  * @author ：zhou (https://improve.ren)
  * @date ：Created in 2019/8/19 15:03
- * @description：守护线程
+ * @description： 守护线程
  */
 public class DaemonThread {
     private static class UseThread extends Thread {
