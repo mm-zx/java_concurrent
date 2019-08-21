@@ -30,6 +30,7 @@ public class AppTest {
     }
 
     public static void main(String[] args) {
+        //执行50个获取链接的线程
         for (int i = 0; i < 50; i++) {
             Thread thread = new BusiThread();
             thread.start();
