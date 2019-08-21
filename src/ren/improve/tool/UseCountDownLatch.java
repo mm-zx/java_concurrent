@@ -1,4 +1,4 @@
-package ren.improve.tool.countDownLatch;
+package ren.improve.tool;
 
 import java.util.concurrent.CountDownLatch;
 
