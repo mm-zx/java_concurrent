@@ -40,7 +40,7 @@ public class DBPoolSemaphore {
 
     //从池子拿连接
     public Connection takeConnect() throws InterruptedException {
-        useful.acquire();//acquire()获取Semaphore的运行许可，没有则排队等候
+        useful.acquire();//
         Connection connection;
         synchronized (pool) {
             connection = pool.removeFirst();
