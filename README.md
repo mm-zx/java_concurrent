@@ -45,7 +45,7 @@
 
 - Exchanger：交换器
 
-  - new Exchanger<T>(): T:存储类型
+  - new Exchanger<>(): <>泛型设置存储类型
   - exchange()：交换资源（阻塞方法）；找不到需要交换的数据会一直阻塞住
 
   
