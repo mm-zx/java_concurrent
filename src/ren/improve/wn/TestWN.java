@@ -33,5 +33,7 @@ public class TestWN {
         }
         Thread.sleep(1000);
         express.changeKm();
+        Thread.sleep(1000);
+        express.changeSite();
     }
 }
