@@ -97,3 +97,18 @@
   - 等待(阻塞方法):condition.await()//注 condition也有wait()，但这个wait是object提供的
   - 通知：condition.signal()/condition.signalAll()。通知调用了当前condition的await()线程
 
+#### CAS（Compare And Swap  比较并且交换）
+
+- 方式：CAS通过比较一个内存地址，以及一个期望的旧值。通过则替换上新值
+- 常见的问题：
+  - ABA：若旧值为A，在进行比较时 ，旧值已经发生如下改变 A->B->A。这样会导致比较通过，但明显不是我们预想的流程。解决方法：利用版本号:1A->2B->3A 而我们的旧值是1A，则没有通过比较。（AtomicStampedReference（））
+  - 循环的时间长且开销大
+  - 往往只能保证一个共享变量的原子操作
+
+#### Jdk中相关原子类
+
+1. 更新基本类：AtomicBoolean、AtomicInteger、AtomicLong、AtomicReference
+2. 更新数组类：AtomicIntegerArray、AtomicLongArray、AtomicReferenceArray
+3. 更新引用类型：AtomicReference、AtomicMarkableReference、AtomicStampedReference
+4. 原子更新字段类：AtomicReferenceFieldUpdater、AtomicIntegerFieldUpdater、AtomicLongFieldUpdater
+
