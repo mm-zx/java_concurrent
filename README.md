@@ -79,3 +79,21 @@
 - 简单的死锁：当线程相互竞争资源时，应统一获取锁的顺序。不应互相持有对方想要获取的锁资源。
 - 动态的死锁：在不可控的情况下，我们可以根据锁对象的hashCode，按hashCode的大小决定获取锁的顺序，推荐使用System.identityHashCode(object)；这样也是为了与其他线程统一取锁顺序。（当出现HashCode一直时）我们可以手动生成加时锁，避免特殊情况的产生。归还加时锁即表示当前线程已结束这样边不会去其他线程产生死锁情况）
 
+### 显示锁和CAS
+
+#### 显示锁
+
+- Lock与synchronized相比的优势
+  - lock加锁和解锁可以显示的控制：lock()，unlock()
+  - lock可以尝试非阻塞获取锁并可设置超时时间：tryLock()
+  - 可以被中断的获取锁：lockInterruptibly()->"若线程执行lockInterruptibly()没有获取到锁，当前线程可以通过interrupt()中断"
+- Lock的实现类
+  - ReentrantLock
+  - ReentrantReadWriteLock（一写多读情况下性能明显优于synchronized）
+    - writeLock()//返回写锁
+    - readLock()//返回读锁
+- Condition接口（实现通知机制，可以有选择的操作等待与通知,可控性大于wait()和notify()/notifyAll();）
+  - 获得方法：lock.newCondition()
+  - 等待(阻塞方法):condition.await()//注 condition也有wait()，但这个wait是object提供的
+  - 通知：condition.signal()/condition.signalAll()。通知调用了当前condition的await()线程
+
