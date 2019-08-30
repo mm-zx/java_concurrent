@@ -112,3 +112,84 @@
 3. 更新引用类型：AtomicReference、AtomicMarkableReference、AtomicStampedReference
 4. 原子更新字段类：AtomicReferenceFieldUpdater、AtomicIntegerFieldUpdater、AtomicLongFieldUpdater
 
+### 线程池
+
+- ##### 为什么要用线程池
+
+  1. 降低我们的资源消耗；
+  2. 提高我们的相应速度：T1: 线程创建的时间；T2：任务运行的时间；T3：销毁线程。（使用线程池减少T1和T3）
+  3. 提高线程的可管理性：使用线程池可以统一应用，调优和监控线程池内的线程
+
+- ##### 线程池的工作机制（当主线程向线程池提交任务，线程池的执行顺序）
+
+  1. 若当前线程数小于corePoolSize时，线程池就会启动新的线程执行任务。
+  2. 若线程数已经达到corePoolSize时，任务则会被推进阻塞队列里。
+  3. 当阻塞队列被推满以后，线程池就会继续增加线程处理任务，直到线程数达到了maximumPoolSIze为止。
+  4. 当线程池已经存不下任务时，这时候会执行预设好的饱和策略对任务进行处理。
+
+- ##### 为什么线程池不直接将任务推送到任务队列中，让执行线程直接从任务队列中拿
+
+  - 采用execute()方法往线程池中推送新任务的时候，有可能会出现全局锁的情况，而使用现有机制可以保证，推送任务进队列中时(全局锁中),已有线程在执行任务，加强使用效率。
+
+  
+
+#### Jdk提供的线程池
+
+- ThreadPoolExecutor
+
+  - corePoolSize ：核心线程数
+  - maximumPoolSIze: 允许的最大线程数
+  - keepAliveTime：空闲的线程存活的时间
+  - TimeUnit：keepAliveTime对应的时间单位
+  - workQueue：阻塞队列
+  - threadFactory：线程工厂，缺省的线程的命名规则：pool+数字+thread-数字
+  - RejectedExecutionHandler:饱和策略（当阻塞队列满了，没有空闲的工作线程的时候，往线程池内提交任务时执行的策略）
+    - AbortPolicy：直接报出异常，默认
+    - CallerRunsPolicy：用调用者所在的线程执行任务。
+    - DiscardOldestPolicy：丢弃阻塞队列中最老的任务，并执行目前的新任务
+    - DiscardPolicy：直接丢弃当前提交的任务
+
+- FixedThreadPool：使用固定线程数的线程池
+
+  - LinkedBlockingQueue：无界队列，饱和策略在此失效，若任务数过多，易造成内存泄漏
+
+- SingleThreadExecutor：单个线程数
+
+  - LinkedBlockingQueue
+
+- CachedThreadPool缓冲线程池(使用场景：每一个任务执行的时间都非常短)
+
+  - SynchronousQueue：不存放任何数据；CachedThreadPool的线程数很高，不需要存放数据。
+
+- WorkStealingPool(1.7以后)工作密取的线程；实际使用的是ForkJoinPool
+
+- ScheduledThreadPoolExecutor:
+
+  - ScheduledThreadPoolExecutor: 包含若干个线程的ScheduledThreadPoolExecutor
+
+  - SingleThreadScheduledExecutor: 只包含一个线程的 ScheduledThreadPoolExecutor
+
+  - 提交定时任务的四个方法:
+
+    ```java
+    //提交一个仅执行一次的任务
+    public ScheduledFuture<?> schedule(Runnable command,long delay,TimeUnit unit)
+    //提交一个仅执行一次的任务 有返回值
+    public <V> ScheduledFuture<V> schedule(Callable<V> callable,long delay,TimeUnit unit) 
+    //固定时间间隔循环执行
+    public ScheduledFuture<?> scheduleAtFixedRate(Runnable command,long initialDelay,long period,TimeUnit unit)
+    //固定延时间隔循环执行（当前线程执行完，延时固定的时间再次执行）
+    public ScheduledFuture<?> scheduleWithFixedDelay(Runnable command,long initialDelay,long delay,TimeUnit unit)    
+    ```
+
+  - scheduleAtFixedRate 定时任务超时问题
+
+    - 若任务抛出异常并没有捕获处理，会导致循环终止
+
+    - 假设任务间隔时间 60s
+
+      1. 第一个任务 80s; 0---80s
+      2. 第二个任务 20s；80s---100s
+      3. 第三个任务 50s； 140s（80+60）-190s
+
+      可以看出：若任务时长超过计划间隔时间会在上一个任务执行完立即执行下一个任务。
