@@ -193,3 +193,79 @@
       3. 第三个任务 50s； 140s（80+60）-190s
 
       可以看出：若任务时长超过计划间隔时间会在上一个任务执行完立即执行下一个任务。
+
+### 并发容器
+
+- ConcurrentHashMap
+  - 为什么要使用ConcurrentHashMap
+    - 多线程下使用HashMap进行操作，会引起死循环，导致cpu的利用率接近100%；死循环是因为HashMap在多线程下使用，若没做线程安全的控制，会使Linked链表形成环形的数据结构，链表的next节点则永远不为空，即会产生死循环。
+    - HashTable是线程安全的，他的实现是将所有方法加上synchronized关键字，在竞争激烈的情况下，HashTable是非常低的。
+    - 根据以上情况所以jdk提供了ConcurrentHashMap
+  - putIfAbsent()://如果缺失则放到容器内
+  - ConcurrentHashMap的初始化参数
+    - initialCapacity:初始化容量，缺省值16
+    - loadFactor：加载因子：当容器的容量达到阈值 进行扩容
+    - concurrencyLevel:允许多少个线程修改这个map 缺省值16
+  - ConcurrentHashMap如何实现线程安全
+    - 1.7 ConcurrentHashMap是由Segment数组（可重入锁）和HasEntry 数据结构（用于存储键值对数据）组成。
+    - 1.8 取消Segment ，采用链表+红黑树
+- ConcurrentSkipListMap 和 ConcurrentSkipListSet
+  - SkipList：
+    - 跳表的产生：二分查找----二叉查找树---->平衡二叉树：AVL树，红黑树，B+树 ,“概念繁多，并发下更难控制”---->跳表
+    - 跳表是空间换时间的算法（需拿出空间存放索引）
+    - 跳表属于概率算法，是一种随机化的数据结构
+    - redis中就使用了跳表
+- ConcurrentSkipLinkedQueue（LinkedList的并发版本）
+  - add()//将元素插入队列的头部
+  - offer()//将元素插入队列的尾部
+  - peek()//检索队列的头部拿到元素，但并不移除元素
+  - poll()//检索队列的头部拿到元素，并移除元素
+- CopyOnWriteArrayList和 CopyOnWriteArraySet
+  - 当往这两个容器添加元素时，先复制出一个新的容器，往新的容器添加元素，添加后，将引用指向新的容器（写时复制，可以实现并发的读，读写分离思想下实现的容器）
+  - 注：因为写的时候并未将旧容器锁住，最适用于“读多写少”的使用场景如黑名单，白名单，敏感词汇。
+  - 缺点：
+    1. 内存专用比较大
+    2. 数据一致性的问题
+
+### 阻塞队列：
+
+- 什么是阻塞队列：
+
+  - 插入或者移除元素的时候，当条件不满足时，让工作线程池阻塞的队列
+
+- 常用方法
+
+  | 方法 | 抛出异常 | 返回特殊值 | 阻塞 |  超时   |
+  | :--: | :------: | :--------: | :--: | :-----: |
+  | 插入 |   add    |   offer    | put  | offer() |
+  | 移除 |  remove  |    pool    | take | poll()  |
+  | 检查 | element  |    peek    | N/A  |   N/A   |
+
+- 常用阻塞队列
+  1. ArrayBlockingQueue：数组结构，有界的
+     - 先进先出的原则
+     - ArrayBlockingQueue的锁只有一把，读写拿的同一把
+     - 直接将元素推入队列
+     - 初始化时必须指定大小
+  2. LinkedBlockingQueue：链表结构，有界的
+     - 先进先出的原则
+     - LinkedBlockingQueue的锁是分离的   putLock/takeLock（如果并发剧烈的情况下LinkedBlockingQueue相比ArrayBlockingQueue效率更高）
+     - 先将元素包装成Node 放入队列（这一方面性能不如ArrayBlockingQueue）
+     - 可以不指定大小，缺省值是Integer的maxValue
+  3. PriorityBlockingQueue: 支持优先级排序的无界队列
+     - 默认是元素的自然顺序，自定顺序的话可以类自己实现compareTo()；或者初始化queue的时候指定构造参数(ComparaTor)
+  4. DelayQueue:用PriorityBlockingQueue 实现的无界阻塞队列
+     - 支持延时获取元素的，放入的元素必须要实现Delayed接口，场景：有过期需求的缓存系统，订单到期，延时支付
+  5. SynchronousQUeue：不存储元素的队列
+     - 每一个推入元素的操作，都必须有一个拿元素操作相对应，类似传球手,将生产者的元素直接传递给消费者，适合传递性的场景
+  6. LinkedTransferQueue:链表结构，无界的
+     - 提供tryTransfer和transfer方法
+       - transfer：如果当前有消费者正在队列上等待接受元素，生产者就会直接将元素传递给消费者，若没有消费者等待的话会插入到队列的尾节点，并且等到元素被消费者接受才会返回（阻塞方法）
+       - tryTransfer：尝试传入的元素能不能直接传给消费者,若不能的话会回传false（不会阻塞）
+  7. LinkedBlockingDeque： 链表结构，双向队列
+     - 双向队列：相比单向多了一个入口，在多线程情况下可以减少一半的竞争
+     - 提供方法：addFirst/addLast,offerFirst/offerLast,peekFirst/peekLast
+     - 默认方法：add=addLast,remove=removeLast,take=takeFirst
+     - 使用场景：工作密取模式
+- 阻塞队列的实现原理
+  - 用Condition实现等待和通知机制
