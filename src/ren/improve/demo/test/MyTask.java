@@ -1,6 +1,6 @@
 package ren.improve.demo.test;
 
-import ren.improve.demo.vo.ITaskProcesser;
+import ren.improve.demo.vo.ITaskProcessor;
 import ren.improve.demo.vo.TaskResult;
 import ren.improve.demo.vo.TaskResultType;
 
@@ -11,7 +11,7 @@ import java.util.Random;
  * @date ：Created in 2019/9/2 16:50
  * @description： 一个实际任务类，将数值加上一个随机数，并休眠随机时间
  */
-public class MyTask implements ITaskProcesser<Integer, Integer> {
+public class MyTask implements ITaskProcessor<Integer, Integer> {
   @Override
   public TaskResult<Integer> taskExecute(Integer data) {
     Random r = new Random();
@@ -19,8 +19,8 @@ public class MyTask implements ITaskProcesser<Integer, Integer> {
     try {
       Thread.sleep(flag);
       if (flag <= 300) { // 正常处理情况
-        Integer retrunValue = data + flag;
-        return new TaskResult<>(TaskResultType.Success, retrunValue);
+        Integer returnValue = data + flag;
+        return new TaskResult<>(TaskResultType.Success, returnValue);
       } else if (flag > 301 && flag <= 400) { // 处理失败的情况
         return new TaskResult<>(TaskResultType.Failure, -1, "Failure");
       } else { // 发生异常的情况

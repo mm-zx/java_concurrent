@@ -1,6 +1,6 @@
 package ren.improve.demo.vo;
 
-import ren.improve.demo.CheckJobProcesser;
+import ren.improve.demo.CheckJobProcessor;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -18,7 +18,7 @@ public class JobInfo<R> {
   // 记录当前工作中需要进行处理的任务数
   private final int jobLength;
   // 处理工作中任务的处理器
-  private final ITaskProcesser<?, ?> taskProcesser;
+  private final ITaskProcessor<?, ?> taskProcessor;
   // 任务的成功次数
   private AtomicInteger successCount;
   // 工作中任务目前已经处理的次数
@@ -29,13 +29,13 @@ public class JobInfo<R> {
   private final long expireTime;
 
   public JobInfo(
-      String jobName, int jobLength, ITaskProcesser<?, ?> taskProcesser, long expireTime) {
+          String jobName, int jobLength, ITaskProcessor<?, ?> taskProcessor, long expireTime) {
     this.jobName = jobName;
     this.jobLength = jobLength;
     successCount = new AtomicInteger(0);
     taskProcessCount = new AtomicInteger(0);
     taskDetailQueus = new LinkedBlockingDeque<>(jobLength);
-    this.taskProcesser = taskProcesser;
+    this.taskProcessor = taskProcessor;
     this.expireTime = expireTime;
   }
 
@@ -52,8 +52,8 @@ public class JobInfo<R> {
     return taskProcessCount.get() - successCount.get();
   }
 
-  public ITaskProcesser<?, ?> getTaskProcesser() {
-    return taskProcesser;
+  public ITaskProcessor<?, ?> getTaskProcessor() {
+    return taskProcessor;
   }
 
   // 提供工作的整体进度信息
@@ -84,7 +84,7 @@ public class JobInfo<R> {
 
   // 每个任务完成以后，记录这个任务的处理结果
   // 从业务角度考虑，并不要求查询的数据强一致性，只需保证最终一致性，方法斌不需要加锁
-  public void addTaskResult(TaskResult<R> result, CheckJobProcesser checkJob) {
+  public void addTaskResult(TaskResult<R> result, CheckJobProcessor checkJob) {
     if (result.getResultType().equals(TaskResultType.Success)) {
       successCount.incrementAndGet();
     }

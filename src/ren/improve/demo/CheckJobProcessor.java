@@ -11,10 +11,10 @@ import java.util.concurrent.DelayQueue;
  * @date ：Created in 2019/9/2 15:25
  * @description： 任务完成以后，保留一段时间供查询，为了节省资源，我们要定期清理过期的任务
  */
-public class CheckJobProcesser {
+public class CheckJobProcessor {
   private DelayQueue<ItemVo<String>> queue; // 存放任务的队列
 
-  public CheckJobProcesser(DelayQueue<ItemVo<String>> queue) {
+  public CheckJobProcessor(DelayQueue<ItemVo<String>> queue) {
     this.queue = queue;
   }
 

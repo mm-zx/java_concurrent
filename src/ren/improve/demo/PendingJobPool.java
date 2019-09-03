@@ -1,6 +1,6 @@
 package ren.improve.demo;
 
-import ren.improve.demo.vo.ITaskProcesser;
+import ren.improve.demo.vo.ITaskProcessor;
 import ren.improve.demo.vo.JobInfo;
 import ren.improve.demo.vo.TaskResult;
 import ren.improve.demo.vo.TaskResultType;
@@ -24,7 +24,7 @@ public class PendingJobPool {
   // 工作信息的保存的容器
   private static ConcurrentHashMap<String, JobInfo<?>> jobInfoMap = new ConcurrentHashMap<>();
   // 检查过期工作的处理
-  private static CheckJobProcesser checkJob = new CheckJobProcesser(new DelayQueue<>());
+  private static CheckJobProcessor checkJob = new CheckJobProcessor(new DelayQueue<>());
 
   // 私有构造函数，做一些初始化的工作
   private PendingJobPool() {}
@@ -50,10 +50,10 @@ public class PendingJobPool {
     @Override
     public void run() {
       R r = null;
-      ITaskProcesser<T, R> taskProcesser = (ITaskProcesser<T, R>) jobInfo.getTaskProcesser();
+      ITaskProcessor<T, R> taskProcessor = (ITaskProcessor<T, R>) jobInfo.getTaskProcessor();
       TaskResult<R> result = null;
       try {
-        result = taskProcesser.taskExecute(processData);
+        result = taskProcessor.taskExecute(processData);
         if (null == result) {
           result = new TaskResult<R>(TaskResultType.Exception, r, "result is null");
         }
@@ -80,8 +80,8 @@ public class PendingJobPool {
 
   // 调用注册工作的方法,工作名，工作中任务的处理器
   public <R> void registerJob(
-      String jobName, int jobLength, ITaskProcesser<?, ?> taskProcesser, long expriTime) {
-    JobInfo<R> jobInfo = new JobInfo<>(jobName, jobLength, taskProcesser, expriTime);
+          String jobName, int jobLength, ITaskProcessor<?, ?> taskProcessor, long expriTime) {
+    JobInfo<R> jobInfo = new JobInfo<>(jobName, jobLength, taskProcessor, expriTime);
     if (jobInfoMap.putIfAbsent(jobName, jobInfo) != null) {
       throw new RuntimeException(jobName + "以及注册的任务");
     }
